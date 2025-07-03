@@ -1,5 +1,12 @@
+import { Link } from 'react-router-dom'
+
 function Header() {
-   return <p>ceci est un test</p>
+   return (
+      <nav>
+         <Link to="/">Accueil</Link>
+         <Link to="/APropos/"> A propos </Link>
+      </nav>
+   )
 }
 
 export default Header
