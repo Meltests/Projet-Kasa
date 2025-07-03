@@ -9,10 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-"dependencies": {
-  "react": "^17.0.2",
-  "react-dom": "^17.0.2"
-},
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
     "@types/react": "^17.0.52",
@@ -22,6 +22,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.2.0",
+    "prettier": "^3.6.2",
     "vite": "^7.0.0"
   }
 }
