@@ -1,0 +1,9 @@
+.footer-banniere {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 150px;
+   background: black;
+   color: white;
+   text-align: center;
+}

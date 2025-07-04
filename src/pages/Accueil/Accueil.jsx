@@ -1,4 +1,4 @@
-function App() {
+function Accueil() {
    return (
       <div>
          <h1>Bienvenue sur mon app !</h1>
@@ -7,4 +7,4 @@ function App() {
    )
 }
 
-export default App
+export default Accueil
