@@ -1,0 +1,28 @@
+.banniere {
+   display: flex;
+   align-items: center;
+   width: 82%;
+   height: 230px;
+   margin: 30px auto;
+   margin-bottom: 40px;
+}
+
+.banniere-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: brightness(70%);
+   border-radius: 20px;
+   opacity: 0.7;
+}
+
+.banniere-texte {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+}

@@ -7,6 +7,7 @@ import Apropos from './pages/APropos/apropos.jsx'
 import Header from './components/Header/Header.jsx'
 import Erreur from './pages/Erreur/Erreur.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Appartement from './pages/Appartement/appartements.jsx'
 
 ReactDOM.render(
    <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
             <Route path="/" element={<Accueil />} />
             <Route path="/APropos" element={<Apropos />} />
             <Route path="*" element={<Erreur />} />
+            <Route path="/appartement/:id" element={<Appartement />} />
          </Routes>
          <Footer />
       </Router>

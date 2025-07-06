@@ -1,8 +1,15 @@
+import { useState } from 'react'
+import Banniere from '../../components/Banniere/banner.jsx'
+import Cards from '../../components/Cards/Cartes.jsx'
+import locations from '../../Data/listecards.js'
+
 function Accueil() {
+   const [locationsState] = useState(locations)
+
    return (
       <div>
-         <h1>Bienvenue sur mon app !</h1>
-         <p>Voici mon texte d'exemple</p>
+         <Banniere />
+         <Cards locations={locationsState} />
       </div>
    )
 }
