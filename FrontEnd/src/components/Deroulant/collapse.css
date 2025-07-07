@@ -24,3 +24,8 @@
    font-size: 20px;
    transition: transform 0.3s ease;
 }
+
+.arrow-rotation {
+   transform: rotate(180deg);
+   transition: 0.4s ease-in-out;
+}
