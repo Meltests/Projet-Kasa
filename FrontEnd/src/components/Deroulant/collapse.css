@@ -1,0 +1,26 @@
+.collapse {
+   margin: 10px auto;
+   width: 60%;
+   height: 50px;
+   background-color: #ff6060;
+   border-radius: 5px;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+   display: flex;
+   align-items: center;
+}
+
+.collapse-titre {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 20px;
+   font-weight: bold;
+   font-size: 20px;
+   width: 100%;
+}
+
+.arrow {
+   font-size: 20px;
+   transition: transform 0.3s ease;
+}
