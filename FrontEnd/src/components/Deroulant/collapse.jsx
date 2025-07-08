@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Collapse.css'
+import arrowIcon from '../../assets/arrow.svg'
 
 function Collapse(props) {
    const [toggle, setToggle] = useState(false)
@@ -12,12 +13,12 @@ function Collapse(props) {
          <div className="collapse">
             <div className="collapse-titre">
                <span>{props.title}</span>
-               <span
+               <img
+                  src={arrowIcon}
+                  alt="arrow icon"
                   className={toggle ? 'arrow arrow-rotation' : 'arrow '}
                   onClick={toggleState}
-               >
-                  ▲
-               </span>
+               />
             </div>
             <div>
                <p aria-hidden={toggle ? 'true' : 'false'}>{props.paragraphe}</p>

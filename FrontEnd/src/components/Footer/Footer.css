@@ -2,8 +2,22 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 150px;
+   height: 170px;
    background: black;
    color: white;
    text-align: center;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.footer-logo {
+   margin-top: 30px;
+   height: 39px;
+}
+
+.footer-texte {
+   font-size: 20px;
+   margin-bottom: 0;
+}
+@media (max-width: 768px) {
 }

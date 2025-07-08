@@ -8,6 +8,7 @@
    font-family: 'Montserrat', sans-serif;
    display: flex;
    align-items: center;
+   margin-bottom: 30px;
 }
 
 .collapse-titre {
@@ -22,10 +23,27 @@
 
 .arrow {
    font-size: 20px;
-   transition: transform 0.3s ease;
+   transition: transform 0.4s ease;
 }
 
 .arrow-rotation {
    transform: rotate(180deg);
    transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+   .collapse {
+      width: 97%;
+      margin-top: 30px;
+      height: 34px;
+      margin: 20px auto;
+   }
+
+   .collapse-titre {
+      font-size: 15px;
+   }
+
+   .arrow {
+      width: 20px;
+   }
 }
