@@ -1,0 +1,16 @@
+.notes-container {
+   display: flex;
+   gap: 4px;
+   justify-content: flex-end;
+   margin-right: 170px;
+}
+
+.note-icon {
+   width: 15%;
+}
+
+@media (max-width: 768px) {
+   .note-icon {
+      width: 180%;
+   }
+}

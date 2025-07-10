@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Banniere from '../../components/Banniere/banner.jsx'
+import Banniere from '../../components/Banner/banner.jsx'
 import Cards from '../../components/Cards/Cartes.jsx'
-import locations from '../../Data/listecards.js'
+import locations from '../../../../BackEnd/backend/data.json'
 import montagnes from '../../assets/montagnes.svg'
 
 function Accueil() {

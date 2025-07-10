@@ -10,14 +10,13 @@ function Cards({ locations }) {
 
    return (
       <div className="card-container">
-         {locations.map(({ id, title, image }) => (
+         {locations.map(({ id, title, cover }) => (
             <div className="card" key={id}>
                <img
-                  src={image}
+                  src={cover}
                   alt={title}
                   className="card-img"
                   onClick={() => handleClick(id)}
-                  style={{ cursor: 'pointer' }}
                />
                <div className="card-title">{title}</div>
             </div>

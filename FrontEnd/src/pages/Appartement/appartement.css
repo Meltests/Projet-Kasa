@@ -1,0 +1,25 @@
+.Header-appart-container {
+   display: flex;
+   justify-content: space-between;
+   gap: 40px;
+   margin: 30px 0 0 0px;
+}
+
+.container-infosapart {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+
+@media (max-width: 768px) {
+   .Header-appart-container {
+      flex-direction: column;
+      margin-top: 0;
+   }
+
+   .container-hote {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+}

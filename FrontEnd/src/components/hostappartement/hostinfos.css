@@ -1,21 +1,39 @@
 .host-container {
    display: flex;
    align-items: center;
-   justify-content: flex-end;
-   width: 100%;
-   margin-right: 80px;
+   width: auto;
+   margin-right: 170px;
 }
 
 .host-container p {
-   font-size: 14px;
+   font-size: 20px;
    text-align: right;
    margin-right: 12px;
+   max-width: 150px;
+   color: #ff6060;
 }
 
 .host-container img {
-   width: 60px;
-   height: 60px;
+   width: 65px;
+   height: 65px;
    border-radius: 50%;
    object-fit: cover;
    border: 1px solid #d1d5db;
+}
+
+@media (max-width: 768px) {
+   .host-container {
+      margin-right: 20px;
+   }
+
+   .host-container p {
+      font-size: 14px;
+      margin-right: 8px;
+      max-width: 100px;
+   }
+
+   .host-container img {
+      width: 40px;
+      height: 40px;
+   }
 }

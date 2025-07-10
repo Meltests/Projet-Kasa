@@ -1,7 +1,7 @@
 import Collapse from '../../components/Deroulant/collapse'
 import CollapseData from '../../Data/collapsedata'
 import imgapropos from '../../assets/imgapropos.svg'
-import Banniere from '../../components/Banniere/banner.jsx'
+import Banniere from '../../components/Banner/banner.jsx'
 
 function Apropos() {
    return (

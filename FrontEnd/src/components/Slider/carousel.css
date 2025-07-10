@@ -40,3 +40,30 @@
    user-select: none;
    right: 40px;
 }
+
+@media (max-width: 768px) {
+   .carousel-container {
+      height: 250px;
+      margin-top: 20px;
+   }
+
+   .slide {
+      width: 100%;
+   }
+
+   .slide img {
+      border-radius: 15px;
+   }
+
+   .slide .arrow-right {
+      height: 60px;
+      width: 10%;
+      right: 10px;
+   }
+
+   .slide .arrow-left {
+      left: 10px;
+      height: 60px;
+      width: 10%;
+   }
+}
