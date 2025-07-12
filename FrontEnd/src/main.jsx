@@ -7,7 +7,7 @@ import Apropos from './pages/APropos/apropos.jsx'
 import Header from './components/Header/Header.jsx'
 import Erreur from './pages/Erreur/Erreur.jsx'
 import Footer from './components/Footer/Footer.jsx'
-import Appartement from './pages/Appartement/appartements.jsx'
+import Appartement from './pages/Appartement/Appartement.jsx'
 
 ReactDOM.render(
    <React.StrictMode>

@@ -1,12 +1,9 @@
-import appartementData from '../../../../BackEnd/backend/data.json'
 import './Tags.css'
 
-function Tags() {
-   const appartement = appartementData[0]
-
+function Tags({ tags }) {
    return (
       <div className="tags-container">
-         {appartement.tags.map((tag, index) => (
+         {tags.map((tag, index) => (
             <span key={index} className="tag">
                {tag}
             </span>

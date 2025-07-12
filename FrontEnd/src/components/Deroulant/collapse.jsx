@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Collapse.css'
 import arrowIcon from '../../assets/arrow.svg'
 
-function Collapse(props) {
+function Collapse({ title, paragraphe, liste }) {
    const [toggle, setToggle] = useState(false)
    const toggleState = () => {
       setToggle(!toggle)
@@ -12,16 +12,28 @@ function Collapse(props) {
       <div>
          <div className="collapse">
             <div className="collapse-titre">
-               <span>{props.title}</span>
+               <span>{title}</span>
                <img
                   src={arrowIcon}
                   alt="arrow icon"
-                  className={toggle ? 'arrow arrow-rotation' : 'arrow '}
+                  className={'arrow' + (toggle ? ' arrow-rotation' : '')}
                   onClick={toggleState}
                />
             </div>
-            <div>
-               <p aria-hidden={toggle ? 'true' : 'false'}>{props.paragraphe}</p>
+
+            <div
+               className={
+                  'collapse-body' + (toggle ? ' collapse-body-open' : '')
+               }
+            >
+               {paragraphe && (
+                  <p aria-hidden={toggle ? true : false}>{paragraphe}</p>
+               )}
+
+               {liste &&
+                  liste.map((item, index) => (
+                     <div key={'liste-' + index}>{item}</div>
+                  ))}
             </div>
          </div>
       </div>

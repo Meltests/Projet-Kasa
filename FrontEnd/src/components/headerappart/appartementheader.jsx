@@ -1,10 +1,10 @@
 import './appartementheader.css'
 
-function AppartementHeader() {
+function AppartementHeader({ title, location }) {
    return (
       <div className="apart-container">
-         <h1> Cozy loft on the Canal Saint-Martin </h1>
-         <p> Paris, Ile-de-France</p>
+         <h1> {title} </h1>
+         <p> {location} </p>
       </div>
    )
 }

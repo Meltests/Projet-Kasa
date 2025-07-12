@@ -1,11 +1,10 @@
-import Imgtest from '../../assets/montagnes.svg'
 import './hostinfos.css'
 
-function HostInfo() {
+function HostInfo({ name, picture }) {
    return (
       <div className="host-container">
-         <p> Alexandre Dumas </p>
-         <img src={Imgtest} alt="image test" />
+         <p> {name} </p>
+         <img src={picture} alt="image hôte" />
       </div>
    )
 }
