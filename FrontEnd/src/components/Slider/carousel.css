@@ -5,6 +5,7 @@
    justify-content: center;
    margin-top: 35px;
    margin-bottom: 0;
+   position: relative;
 }
 
 .slide {
@@ -39,6 +40,15 @@
    cursor: pointer;
    user-select: none;
    right: 40px;
+}
+
+.numerotation {
+   position: absolute;
+   bottom: 25px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: white;
+   justify-content: center;
 }
 
 @media (max-width: 768px) {

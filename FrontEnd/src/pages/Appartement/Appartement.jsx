@@ -1,22 +1,32 @@
 import Collapse from '../../components/Deroulant/collapse'
-import CollapseAppartementData from '../../../../BackEnd/backend/data.json'
 import Tags from '../../components/tags/tagsappartement'
 import Carousel from '../../components/Slider/carousel'
 import AppartementHeader from '../../components/headerappart/appartementheader'
 import HostInfo from '../../components/hostappartement/hostinfos'
 import './appartement.css'
 import Notes from '../../components/Notes/noteshote'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { fetchPropertyById } from '../../Data/server'
 
 function Appartement() {
    const { id } = useParams()
-   const currentAppartement = CollapseAppartementData.find(
-      (item) => item.id == id,
-   )
+   const [currentAppartement, setCurrentAppartement] = useState(null)
+   const [error, setError] = useState(false)
+
+   useEffect(() => {
+      fetchPropertyById(id)
+         .then((data) => setCurrentAppartement(data))
+         .catch(() => setError(true))
+   }, [id])
+
+   if (error) return <Navigate to="/erreur" />
+
+   if (!currentAppartement) return null
 
    return (
       <div>
-         <Carousel />
+         <Carousel pictures={currentAppartement.pictures} />
          <div className="Header-appart-container">
             <div className="container-infosapart">
                <AppartementHeader
@@ -30,8 +40,7 @@ function Appartement() {
                   name={currentAppartement.host.name}
                   picture={currentAppartement.host.picture}
                />
-
-               <Notes />
+               <Notes score={currentAppartement.rating} />
             </div>
          </div>
          <div className="collapse-appart">

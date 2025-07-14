@@ -1,5 +1,5 @@
 :root {
-   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+   font-family: 'Montserrat', sans-serif;
    line-height: 1.5;
    font-weight: 400;
 
@@ -15,7 +15,6 @@
 
 a {
    font-weight: 500;
-   color: rgb(216, 63, 88);
    text-decoration: inherit;
    font-size: 25px;
 }
@@ -25,11 +24,6 @@ body {
    padding: 0;
    min-width: 320px;
    min-height: 100vh;
-}
-
-h1 {
-   font-size: 3em;
-   font-weight: 500;
 }
 
 @media (prefers-color-scheme: light) {

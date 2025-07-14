@@ -1,5 +1,5 @@
 .collapse {
-   margin: 10px auto;
+   margin: 0px auto;
    width: 60%;
    font-family: 'Montserrat', sans-serif;
 }
@@ -9,7 +9,7 @@
    justify-content: space-between;
    align-items: center;
    height: 50px;
-   margin-bottom: 30px;
+   margin-bottom: 0px;
    padding: 15px 20px;
    font-weight: bold;
    font-size: 20px;
@@ -21,14 +21,22 @@
 }
 
 .collapse-body {
-   opacity: 0;
+   padding: 0 20px;
    transition: 0.4s ease-in-out;
-   margin-top: -50px;
+   margin-top: 0px;
+   overflow: hidden;
+   max-height: 0;
+   margin-bottom: 30px;
 }
 
 .collapse-body-open {
-   opacity: 1;
-   margin-top: 0;
+   max-height: 500px;
+   margin-top: 0px;
+   margin-bottom: 20px;
+   max-height: 500px;
+   background-color: #f6f6f6;
+   border-radius: 10px;
+   padding: 15px 20px;
 }
 
 .arrow {
@@ -70,15 +78,37 @@
    .collapse {
       width: 97%;
       margin-top: 30px;
-      height: 34px;
-      margin: 20px auto;
+      margin: 0px auto;
+      margin-top: 20px;
+      margin-bottom: 25px;
+   }
+
+   .collapse-body {
+      margin-bottom: 0px;
+      margin-top: 0;
    }
 
    .collapse-titre {
       font-size: 15px;
+      margin: 0;
    }
 
    .arrow {
       width: 20px;
+   }
+
+   .collapse-appart {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+   }
+
+   .collapse-appart .collapse-description {
+      width: 100%;
+      margin-bottom: 0;
+   }
+   .collapse-appart .collapse-equipement {
+      width: 100%;
+      margin-bottom: 30px;
    }
 }

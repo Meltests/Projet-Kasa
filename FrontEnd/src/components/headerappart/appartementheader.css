@@ -5,7 +5,7 @@
 
 .apart-container h1 {
    font-size: 36px;
-   margin-top: 10px;
+   margin-top: 0px;
    font-weight: 500;
    margin-bottom: 0;
 }
@@ -24,11 +24,12 @@
 
    .apart-container h1 {
       font-size: 25px;
-      margin-top: 20px;
+      margin-top: 10px;
    }
 
    .apart-container p {
-      font-size: 20px;
-      margin-top: 7px;
+      font-size: 16px;
+      margin-top: 5px;
+      font-weight: 500;
    }
 }

@@ -3,14 +3,25 @@
    gap: 4px;
    justify-content: flex-end;
    margin-right: 170px;
+   margin-top: 15px;
 }
 
 .note-icon {
-   width: 15%;
+   width: 18%;
 }
 
 @media (max-width: 768px) {
+   .notes-container {
+      margin-right: 0;
+      margin-top: 0;
+      gap: 0px;
+   }
    .note-icon {
-      width: 180%;
+      width: 35%;
+   }
+
+   .notes-container img {
+      width: 30px;
+      height: auto;
    }
 }

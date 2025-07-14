@@ -7,7 +7,7 @@ function Collapse({ title, paragraphe, liste }) {
    const toggleState = () => {
       setToggle(!toggle)
    }
-   console.log(toggle)
+
    return (
       <div>
          <div className="collapse">

@@ -1,14 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Banniere from '../../components/Banner/banner.jsx'
 import Cards from '../../components/Cards/Cartes.jsx'
-import locations from '../../../../BackEnd/backend/data.json'
 import montagnes from '../../assets/montagnes.svg'
+import { fetchProperties } from '../../Data/server'
 
 function Accueil() {
-   const [locationsState] = useState(locations)
+   const [locationsState, setLocationsState] = useState(null)
+   const [error, setError] = useState(false)
+
+   useEffect(() => {
+      fetchProperties()
+         .then((data) => setLocationsState(data))
+         .catch(() => setError(true))
+   }, [])
+
+   if (error) return <Navigate to="/erreur" />
+   if (!locationsState) return null
 
    return (
-      <div>
+      <div className="banner-accueil">
          <Banniere image={montagnes} texte="Chez vous, partout et ailleurs" />
          <Cards locations={locationsState} />
       </div>

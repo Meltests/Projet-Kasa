@@ -1,12 +1,18 @@
 import imgEtoiles from '../../assets/etoiles.svg'
+import imgEtoilegris from '../../assets/etoilegris.svg'
 import './noteshote.css'
 
-function Notes() {
+function Notes({ score }) {
+   const etoiles = [1, 2, 3, 4, 5]
    return (
       <div className="notes-container">
-         {[...Array(5)].map((_, i) => (
-            <img key={i} src={imgEtoiles} alt="note" className="note-icon" />
-         ))}
+         {etoiles.map((niveau) =>
+            score >= niveau ? (
+               <img key={niveau} src={imgEtoiles} />
+            ) : (
+               <img key={niveau} src={imgEtoilegris} />
+            ),
+         )}
       </div>
    )
 }

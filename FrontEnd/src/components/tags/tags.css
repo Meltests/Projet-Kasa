@@ -9,13 +9,12 @@
 }
 
 .tag {
-   width: 8%;
    background-color: #ff6060;
    color: white;
-   padding: 6px 12px;
+   padding: 6px 25px;
    border-radius: 10px;
-   font-size: 14px;
-   font-weight: 500;
+   font-size: 13px;
+   font-weight: 600;
    height: 15px;
    display: flex;
    justify-content: center;
@@ -25,15 +24,13 @@
 @media (max-width: 768px) {
    .tags-container {
       margin-left: 0px;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       margin-top: 0px;
       gap: 15px;
    }
    .tag {
-      width: 30%;
-      min-width: 100px;
-      height: 20px;
-      font-size: 16px;
+      height: 13px;
+      font-size: 12px;
       border-radius: 8px;
    }
 }
