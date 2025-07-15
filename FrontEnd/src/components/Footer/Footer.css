@@ -19,5 +19,18 @@
    font-size: 20px;
    margin-bottom: 0;
 }
+
 @media (max-width: 768px) {
+   .footer-banniere {
+      padding-top: 20px;
+      padding-bottom: 50px;
+      height: auto;
+   }
+
+   .footer-texte {
+      font-size: 14px;
+      width: 30%;
+      line-height: 1.5;
+      white-space: normal;
+   }
 }

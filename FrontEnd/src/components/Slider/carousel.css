@@ -67,14 +67,18 @@
    }
 
    .slide .arrow-right {
-      height: 60px;
-      width: 10%;
-      right: 10px;
+      height: 30px;
+      width: 30px;
+      right: 0;
    }
 
    .slide .arrow-left {
-      left: 10px;
-      height: 60px;
-      width: 10%;
+      height: 30px;
+      width: 30px;
+      left: 0;
+   }
+
+   .numerotation {
+      display: none;
    }
 }

@@ -7,7 +7,7 @@ import './appartement.css'
 import Notes from '../../components/Notes/noteshote'
 import { useParams, Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { fetchPropertyById } from '../../Data/server'
+import { getAppartementsById } from '../../Data/server'
 
 function Appartement() {
    const { id } = useParams()
@@ -15,7 +15,7 @@ function Appartement() {
    const [error, setError] = useState(false)
 
    useEffect(() => {
-      fetchPropertyById(id)
+      getAppartementsById(id)
          .then((data) => setCurrentAppartement(data))
          .catch(() => setError(true))
    }, [id])

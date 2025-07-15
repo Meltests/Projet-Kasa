@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react'
 import Banniere from '../../components/Banner/banner.jsx'
 import Cards from '../../components/Cards/Cartes.jsx'
 import montagnes from '../../assets/montagnes.svg'
-import { fetchProperties } from '../../Data/server'
+import { getAppartements } from '../../Data/server'
 
 function Accueil() {
    const [locationsState, setLocationsState] = useState(null)
    const [error, setError] = useState(false)
 
    useEffect(() => {
-      fetchProperties()
+      getAppartements()
          .then((data) => setLocationsState(data))
          .catch(() => setError(true))
    }, [])
