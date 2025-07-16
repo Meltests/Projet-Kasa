@@ -32,7 +32,9 @@ function Collapse({ title, paragraphe, liste }) {
 
                {liste &&
                   liste.map((item, index) => (
-                     <div key={'liste-' + index}>{item}</div>
+                     <div key={'liste-' + index} className="collapse-liste">
+                        {item}
+                     </div>
                   ))}
             </div>
          </div>

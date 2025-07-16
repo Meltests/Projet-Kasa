@@ -29,6 +29,14 @@
    margin-bottom: 30px;
 }
 
+.collapse-body p {
+   color: black;
+}
+
+.collapse-liste {
+   color: black;
+}
+
 .collapse-body-open {
    max-height: 500px;
    margin-top: 0px;
@@ -67,6 +75,7 @@
 .collapse-description {
    flex: 1;
    max-width: 710px;
+   margin-bottom: 20px;
 }
 
 .collapse-equipement {
@@ -77,10 +86,7 @@
 @media (max-width: 768px) {
    .collapse {
       width: 97%;
-      margin-top: 30px;
-      margin: 0px auto;
-      margin-top: 20px;
-      margin-bottom: 25px;
+      margin: 20px auto 25px;
    }
 
    .collapse-body {

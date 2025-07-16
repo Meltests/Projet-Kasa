@@ -52,7 +52,7 @@ function Appartement() {
             </div>
             <div className="collapse-equipement">
                <Collapse
-                  title="Equipement"
+                  title="Équipements"
                   liste={currentAppartement.equipments}
                />
             </div>
