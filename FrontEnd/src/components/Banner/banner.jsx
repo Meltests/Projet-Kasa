@@ -1,5 +1,4 @@
 import './Banniere.css'
-import PropTypes from 'prop-types'
 
 function Banniere({ image, texte }) {
    return (
@@ -8,11 +7,6 @@ function Banniere({ image, texte }) {
          {texte && <div className="banniere-texte">{texte}</div>}
       </div>
    )
-}
-
-Banniere.propTypes = {
-   image: PropTypes.string,
-   texte: PropTypes.string,
 }
 
 export default Banniere
