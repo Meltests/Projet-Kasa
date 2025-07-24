@@ -1,4 +1,4 @@
-import '../Cards/Cartes.css'
+import '../Cards/cards.css'
 import { Link } from 'react-router-dom'
 
 function Cards({ locations }) {

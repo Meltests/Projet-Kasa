@@ -1,4 +1,4 @@
-import Collapse from '../../components/Deroulant/collapse'
+import Collapse from '../../components/Collapse/collapse.jsx'
 import CollapseData from '../../Data/collapsedata'
 import imgapropos from '../../assets/imgapropos.svg'
 import Banniere from '../../components/Banner/banner.jsx'

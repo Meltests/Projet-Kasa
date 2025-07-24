@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import Banniere from '../../components/Banner/banner.jsx'
-import Cards from '../../components/Cards/Cartes.jsx'
+import Cards from '../../components/Cards/Cards.jsx'
 import montagnes from '../../assets/montagnes.svg'
 import { getAppartements } from '../../Data/server'
+import { Navigate } from 'react-router-dom'
 
 function Accueil() {
    const [locationsState, setLocationsState] = useState(null)

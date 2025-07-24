@@ -1,4 +1,4 @@
-import './Banniere.css'
+import './Banner.css'
 
 function Banniere({ image, texte }) {
    return (

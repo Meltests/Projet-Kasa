@@ -5,6 +5,7 @@ Kasa is a fullstack web application built with a **React + Vite** frontend and a
 
 ###Front End 
 
+cd /FrontEnd
 Commands to run the project : npm run dev
 
 
